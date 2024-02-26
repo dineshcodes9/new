@@ -1,0 +1,643 @@
+.app {
+    text-align: center;
+    background-color: #002333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #002333;
+    box-shadow: inset 0 0 5px #002333;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #053047;
+    border-radius: 0px;
+  }
+  .nav {
+    background-color: #053047;
+    color: white;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+  }
+  
+  .logo {
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+    position: relative;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .loginButton {
+    background-color: #002333;
+    color: #00ff84;
+    padding: 10px 15px;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75em;
+    
+    right:0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+  }
+  nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #002333;
+    border-radius: 0.2rem;
+  }
+
+  @media (max-width:768px)
+  {
+    nav .menu {
+      display: flex;
+      margin-top: 10px;
+    }
+    nav{
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+    }
+    nav ul{
+      display: none;
+      flex-direction: column;
+      width : 100%;
+      margin-bottom: 0.25rem;
+      
+    }
+    nav ul.open {
+      display: flex;
+      background-color: #002333;
+    }
+    nav ul li{
+      width: 100%;
+      text-align: center;
+    }
+    nav ul li a{
+      margin: 0.2rem 0.5rem;
+    }
+    .eventheading{
+      color:white;
+      font-size:7vw;
+    }
+    .eventsSection {
+      margin: 5vh;
+      width:100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+    }
+    .eventCard {
+      height:50vh;
+      width: 80vw;
+      margin: 10px;
+      box-shadow:4px 6px 10px rgba(255, 254, 254, 0.5);
+      border-radius: 0px;
+      overflow: hidden;
+    }
+    .eventImage {
+      width: 100%;
+      height: 25vh;
+      object-fit: cover;
+    }
+    .eventCardContent {
+      padding: 15px;
+    }
+    .eventTitle {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .eventDescription {
+      font-size: 1rem;
+      color: #555;
+    } 
+  
+
+  .registerButton {
+    background-color: #071e37;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 250px;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+    
+
+.programGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .programRow {
+    display: flex;
+    margin: -1px;
+    justify-content: space-around;
+    width: 97%;
+  }
+  
+  .programCard {
+    width: 100%;
+    height: 300px;
+    margin: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 0px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .programImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .programName {
+    position: relative;
+    top: -11%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left:10vw;
+  }
+  .programGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .programRow {
+    display: flex;
+    margin: -1px;
+    justify-content: space-around;
+    width: 97%;
+  }
+  
+  .programCard {
+    width: 100%;
+    height: 300px;
+    margin: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 0px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .programImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .programName {
+    position: relative;
+    top: -11%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .clubSection {
+    display: flex;
+    width:100%;
+    height:50vw;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    
+  }
+  
+  .clubCard {
+    width:60vw;
+    height:40vw;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 1px 2px 6px rgba(0, 255, 132, 0.8);
+    background-color: rgba(17, 25, 40, 0.8);
+    color: #fff;
+    text-align: center;
+    margin:2vw;
+  }
+  
+  .clubImage {
+    width: 100vw;
+    height: 100vw;
+    object-fit: cover;
+    border-radius: 8px ;
+    margin-left: 15vw;
+  }
+  
+  .clubCardContent {
+    padding: 2vw;
+  }
+  
+  .clubName {
+    font-size: 5px;
+    font-weight: bold;
+  }
+  
+  .registerButton1 {
+    background-color: #002333;
+    color: #02ff84;
+    padding: 10px 8px;
+    overflow-y: hidden;
+    margin-top: 5vw;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.aboutSectioninside{
+  display:flex;
+  flex-direction: column;
+}
+.aboutusimage{
+  width: '40vw';
+  height: '40vw';
+  margin-left: '5vw';
+  margin-right:'3vw'; 
+}
+.statisticsSection {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #002333; 
+}
+
+.statisticsContent {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0px;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.statisticItem {
+  flex: 1;
+  /*width:20vw;*/ 
+  height:10vw;
+  color: #00ff84;
+  flex-direction: row;
+  padding: 2vw;
+  border: 0px solid;
+  border-radius: 0px;
+  margin: 2vw;
+  box-shadow: 0px 3px 10px rgba(0, 255, 132, 0.5);
+  background-color: #063049;
+  position: relative;
+}
+
+.statisticValue {
+  font-weight: bold;
+  padding: 5vw;
+  font-size: 4vw;
+  position: relative;
+}
+
+.statisticLabel {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  position: relative;
+}
+
+.statisticLine {
+  
+  position: relative;
+  top: -125px;
+  bottom: 0px;
+  left: 5px;
+  height: 85px;
+  border-radius: 25px;
+  width: 5px;
+  background-color: rgb(0, 255, 132);
+  transform: translateX(-50%);
+}
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (min-width: 768px) {
+
+  .sliderContainer {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    overflow: hidden;
+    position: sticky;
+  }
+  
+  .carouselContainer {
+    box-sizing: border-box;
+  }
+  
+  .carouselImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .eventsSection {
+    margin-top: 100px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .eventCard {
+    /* height:30%; */
+    width: 30%;
+    margin: 10px;
+    box-shadow:4px 6px 10px rgba(255, 254, 254, 0.5);
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  .eventImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .eventCardContent {
+    padding: 15px;
+  }
+  .eventTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    z-index: 1;
+  }
+  .eventDescription {
+    font-size: 1rem;
+    color: #555;
+  }
+  .registerButton {
+    background-color: #071e37;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 1vw;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-top: 10px;
+
+  }
+    
+
+.programGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .programRow {
+    display: flex;
+    margin: -1px;
+    justify-content: space-around;
+    width: 97%;
+  }
+  
+  .programCard {
+    width: 100%;
+    height: 300px;
+    margin: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 0px; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .programImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .programName {
+    position: relative;
+    top: -11%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 3.5vw;
+  }
+  
+  .clubSection {
+    display: flex;
+    
+    width:100%;
+    height:600px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+  
+  .clubCard {
+    width: 270px;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 1px 2px 6px rgba(0, 255, 132, 0.8);
+    background-color: rgba(17, 25, 40, 0.8);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .clubImage {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px ;
+    margin-left: 15vw;
+  }
+  
+  .clubCardContent {
+    padding: 50px;
+  }
+  
+  .clubName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .registerButton1 {
+    background-color: #002333;
+    color: #02ff84;
+    padding: 10px 8px;
+    overflow-y: hidden;
+    margin-top: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+
+.main {
+    flex: 1;
+    color: #eee;
+    padding: 0px;
+  }
+  
+  .footer {
+    background-color: #053047;
+    color: white;
+    padding: 30px;
+    bottom: 0;
+    width: auto;
+  }
+  
+  .aboutSection {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .aboutsectionimage{
+    visibility: hidden;
+  }
+  .aboutusimage{
+    width: '40vw';
+    height: '40vw';
+    margin-left: '5vw';
+    margin-right:'3vw'; 
+  }
+
+.statisticsSection {
+    margin-top: 5vw;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #002333; 
+  }
+  
+  .statisticsContent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    align-items: center;
+    flex-wrap: wrap; 
+  }
+  
+  .statisticItem {
+    flex: 1;
+    /* width:20vw; */
+    color: #00ff84;
+    flex-direction: row;
+    padding: 20px;
+    border: 0px solid;
+    border-radius: 0px;
+    margin: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 255, 132, 0.5);
+    background-color: #063049;
+    position: relative;
+  }
+  
+  .statisticValue {
+    font-weight: bold;
+    padding: 62px;
+    font-size: 36px;
+    position: relative;
+  }
+  
+  .statisticLabel {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    position: relative;
+  }
+  
+  .statisticLine {
+    
+    position: relative;
+    top: -145px;
+    bottom: 0px;
+    left: 15px;
+    height: 85px;
+    border-radius: 25px;
+    width: 5px;
+    background-color: rgb(0, 255, 132);
+    transform: translateX(-50%);
+  }
+}
